@@ -8,15 +8,15 @@ AngularJS + (Angular-Nav) + (Angular-hammer)
 
 
 ##Support:
--Inline "ng Event" :
+- Inline "ng Event" :
 		hm-doubletap, hm-swipe, hm-drag, hm-pinch gestures
--Page Transitions :
+- Page Transitions :
 		angular directive nav-to attribute
 		define page transitions on $routeProvider
 
 
 ##Demo:
-		[Here](http://tools.regou.me/angular-nav-plus-hammer/)
+		http://tools.regou.me/angular-nav-plus-hammer/
 
 
 
