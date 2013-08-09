@@ -9,6 +9,7 @@ AngularJS + (Angular-Nav) + (Angular-hammer)
 
 ##Support:
 - Inline "ng Event" :
+
 		hm-doubletap, hm-swipe, hm-drag, hm-pinch gestures
 
 - Page Transitions :
