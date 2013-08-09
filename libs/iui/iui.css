@@ -142,7 +142,7 @@ text-shadow: #7a0001 0 -1px 0;
 
 /************************************************************************************************/
 
-ul > li {
+ul.iui > li {
   position: relative;
   margin: 0;
   border-bottom: 1px solid #E0E0E0;
@@ -152,7 +152,7 @@ ul > li {
   list-style: none;
 }
 
-ul > li.group {
+ul.iui > li.group {
   position: relative;
   top: -1px;
   margin-bottom: -2px;
@@ -165,12 +165,12 @@ ul > li.group {
   color: #FFFFFF;
 }
 
-ul > li.group:first-child {
+ul.iui > li.group:first-child {
   top: 0;
   border-top: none;
 }
 
-ul > li > a {
+ul.iui > li > a {
   display: block;
   margin: -8px 0 -8px -10px;
   padding: 8px 32px 8px 10px;

@@ -58,12 +58,12 @@ li > a[selected="progress"] {
 
 /************************************************************************************************/
 
-ul > li.group {
+ul.iui > li.group {
 	opacity:0.7;
     background: url(listGroup.png) repeat-x;
 }
 
-ul > li > a {
+ul.iui > li > a {
     background: url(listArrow.png) no-repeat right center;
 }
 

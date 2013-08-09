@@ -1,11 +1,12 @@
 <section ng-controller="homeCtrl">
-<div class="toolbar">
+<header class="toolbar">
   <h1 id="pageTitle">Home</h1>
-</div>
+</header>
+
 <div class="content panel">
   <input ng-model="angular" >
   <p style="text-align: center;">{{angular}} 添加"nav-to"属性 "ani"属性（动画）ani属性值前加减号"-"为反向</p>
-  <ul>
+  <ul class="iui">
     <li><a nav-to="/one">First Page</a></li>
     <li><a nav-to="/two">Page Two</a></li>
     <li><a nav-to="/backwards">Logout</a></li>
