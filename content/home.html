@@ -1,3 +1,17 @@
-<div data-ng-controller="homeCtrl" class="content" scrollable>
+<section data-ng-controller="homeCtrl" class="content" scrollable>
+
+  <div class="list-group">
+    <a class="list-group-item" nav-to="/one">First Page</a>
+    <a class="list-group-item" nav-to="/two">Page Two</a>
+    <a class="list-group-item" nav-to="/backwards">Logout</a>
+  </div>
+
+    <div hm-swipe="swiped()" hm-doubletap="dtaped()" style="height:10em;border: 0.2em dashed darkolivegreen">
+
+        Try to doubleTap or swipe
+        <h3>{{act}}</h3>
+    </div>
+
 
 </div>
+</section>
