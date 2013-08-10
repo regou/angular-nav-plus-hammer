@@ -4,10 +4,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta charset="utf-8" />
     <meta name="viewport" content="target-densitydpi=medium-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <title>Angular Mobile Nav</title>
-    <link rel="stylesheet" href="libs/iui/iui.css">
-    <link rel="stylesheet" href="libs/iui/iui/default-theme.css"/>
+    <title>Angular Nav Plus Hammer</title>
 
+    <link rel="stylesheet" href="libs/bootStrap/bootstrap.css">
+
+
+    <script src="libs/jquery.js"></script>
     <script src="libs/angular.js"></script>
 
     <script src="libs/angular-hammer/hammer.min.js"></script>
@@ -19,17 +21,55 @@
     <script src="js/boot.js"></script>
     <script src="js/route.js"></script>
 
-
-
+    <link rel="stylesheet" href="css/fixer.css">
 
 </head>
 
 <body ng-controller="MainCtrl">
-      <mobile-view>
 
-      </mobile-view>
+<link rel="stylesheet" href="css/webfont/flatui-fonts/flatui-font.css">
+<header ng-controller="headerCtrl"
+          class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
+    <div class="container">
+        <p ng-if="backTitle" class="navbar-text pull-left my_backbtn">
+            <a hm-tap="historyBack()">
+                <span class="fui-arrow-left"></span>{{backTitle}}
+            </a>
+         </p>
+        <button class="navbar-toggle my_navcollapseBtn" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a nav-to="/" class="navbar-brand">{{pageTitle}}</a>
+        <nav id="my_headerCollapse" class="nav-collapse collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a nav-to="/one">Page1</a>
+                </li>
+                <li>
+                    <a nav-to="/two">Page2</a>
+                </li>
+                <li class="active">
+                    <a nav-to="/backwards">BackWards</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<mobile-view>
+
+</mobile-view>
 
 
 </body>
+
+<script src="libs/bootStrap/bootstrap.min.js"></script>
+
 <script src="js/controllers/homeCtrl.js"></script>
+<script src="js/controllers/headerCtrl.js"></script>
+
+<script defer src="js/controllers/page1Ctrl.js"></script>
+<script defer src="js/controllers/backwardsCtrl.js"></script>
 </html>
