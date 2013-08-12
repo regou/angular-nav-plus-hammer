@@ -3,12 +3,14 @@ app.config(function($routeProvider) {
             .when("/one", {
                 templateUrl: "content/page1.html",
                 pageTitle:"Page1",
+                pageRole:"nav0",
                 transition: "slide",
                 reverse: false
             })
             .when("/two", {
                 templateUrl: "content/page2.html",
                 pageTitle:"Page2",
+                pageRole:"nav1",
                 transition: "modal" //this is overwritten by the go() in home.html
             })
             .when("/popup", {
@@ -22,6 +24,7 @@ app.config(function($routeProvider) {
             .when("/backwards", {
                 templateUrl: "content/backwards.html",
                 pageTitle:"backwards",
+                pageRole:"nav2",
                 reverse: true
             })
             .when("/", {

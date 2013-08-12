@@ -29,11 +29,12 @@
 
 <link rel="stylesheet" href="css/webfont/flatui-fonts/flatui-font.css">
 <header ng-controller="headerCtrl"
+        ng-init="title.pageTitle='';title.backTitle=''"
           class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
     <div class="container">
-        <p ng-if="backTitle" class="navbar-text pull-left my_backbtn">
+        <p ng-if="title.backTitle" class="navbar-text pull-left my_backbtn">
             <a hm-tap="historyBack()">
-                <span class="fui-arrow-left"></span>{{backTitle}}
+                <span class="fui-arrow-left"></span>{{title.backTitle}}
             </a>
          </p>
         <button class="navbar-toggle my_navcollapseBtn" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
@@ -41,16 +42,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a nav-to="/" class="navbar-brand">{{pageTitle}}</a>
+        <a nav-to="/" class="navbar-brand">{{title.pageTitle}}</a>
         <nav id="my_headerCollapse" class="nav-collapse collapse bs-navbar-collapse">
             <ul class="nav navbar-nav">
-                <li>
+                <li ng-class="navActiveClass[0]">
                     <a nav-to="/one">Page1</a>
                 </li>
-                <li>
+                <li ng-class="navActiveClass[1]">
                     <a nav-to="/two">Page2</a>
                 </li>
-                <li class="active">
+                <li ng-class="navActiveClass[2]">
                     <a nav-to="/backwards">BackWards</a>
                 </li>
             </ul>
