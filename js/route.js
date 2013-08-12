@@ -19,7 +19,8 @@ app.config(function($routeProvider) {
                 transition: "modal"
             })
             .when("/monkey", {
-                templateUrl: "content/monkey.html"
+                templateUrl: "content/monkey.html",
+                pageTitle:"Monkey"
             })
             .when("/backwards", {
                 templateUrl: "content/backwards.html",
