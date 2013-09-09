@@ -18,7 +18,7 @@ app.controller("headerCtrl",function($scope,$rootScope,$navigate){
 
         $scope.title.pageTitle=curRoute.$$route['pageTitle'];
         if(curPageRole=="main"){
-            navHistory=$navigate.eraseHistory(curRoute);
+            navHistory=$navigate.eraseHistory('page',curRoute);
         }
         var l=navHistory.length;
         var pre=navHistory[l-2];
