@@ -1,5 +1,5 @@
 /*启动angular*/
-var app=angular.module('myApp', ['ajoslin.mobile-navigate','hmTouchEvents','regou.ajaxNormalizer']);
+var app=angular.module('regou.anph', ['ajoslin.mobile-navigate','hmTouchEvents','regou.ajaxNormalizer']);
 
 
 app.config(function($httpProvider) {
