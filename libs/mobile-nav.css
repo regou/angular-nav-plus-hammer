@@ -130,6 +130,69 @@
 
 
 /*
+ * iOSlide
+ * ios7 like slide pages horizontally
+ */
+@-webkit-keyframes iOSlideInFromRight {
+    0% { -webkit-transform: translate3d(100%, 0, 0); }
+    100% { -webkit-transform: translate3d(0, 0, 0); }
+}
+@-webkit-keyframes iOSlideOutToRight {
+    0% { -webkit-transform: translate3d(0, 0, 0); }
+    100% { -webkit-transform: translate3d(35%, 0, 0); }
+}
+@-webkit-keyframes iOSlideInFromLeft {
+    0% { -webkit-transform: translate3d(-100%,0,0); }
+    100% { -webkit-transform: translate3d(0, 0, 0); }
+}
+@-webkit-keyframes iOSlideOutToLeft {
+    0% { -webkit-transform: translate3d(0,0,0); }
+    100% { -webkit-transform: translate3d(-35%, 0, 0); }
+}
+
+@keyframes iOSlideInFromRight {
+    0% { transform: translate3d(100%, 0, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes iOSlideOutToRight {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(35%, 0, 0); }
+}
+@keyframes iOSlideInFromLeft {
+    0% { transform: translate3d(-100%,0,0); }
+    100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes iOSlideOutToLeft {
+    0% { transform: translate3d(0,0,0); }
+    100% { transform: translate3d(-35%, 0, 0); }
+}
+
+.mb-iOSlide {
+    -webkit-animation-duration: .3s;
+    -webkit-animation-timing-function: ease;
+    animation-duration: .3s;
+    animation-timing-function: ease;
+}
+.mb-iOSlide.mb-in {
+    -webkit-animation-name: iOSlideInFromRight;
+    animation-name: iOSlideInFromRight;
+}
+.mb-iOSlide.mb-in.mb-reverse {
+    -webkit-animation-name: iOSlideOutToRight;
+    animation-name: iOSlideOutToRight;
+}
+.mb-iOSlide.mb-out {
+    -webkit-animation-name: iOSlideOutToLeft;
+    animation-name: iOSlideOutToLeft;
+}
+.mb-iOSlide.mb-out.mb-reverse {
+    -webkit-animation-name: iOSlideInFromLeft;
+    animation-name: iOSlideInFromLeft;
+}
+
+
+
+/*
  * Modal!
  * slide a page in from the bottom onto a page
  */

@@ -8,7 +8,7 @@
  * Adjust back Action strategy by regou
  */
 
-angular.module('ajoslin.mobile-navigate', [])
+angular.module('ajoslin.mobile-navigate', ['ngAnimate','ngRoute'])
     .run(['$navigate', '$rootScope', function($navigate, $rootScope) {
         //Android back button functionality for phonegap
         document.addEventListener("deviceready", function() {
