@@ -22,4 +22,5 @@ AngularJS + (Angular-Nav) + (Angular-hammer)
 		http://tools.regou.me/angular-nav-plus-hammer/
 
 
-
+--------------
+2013.12.30: update to angularJS 1.2.6
