@@ -2,14 +2,14 @@
 var app=angular.module('regou.anph', ['ajoslin.mobile-navigate','hmTouchEvents','regou.ajaxNormalizer']);
 
 
-app.config(function($httpProvider) {
+app.config(['$httpProvider',function($httpProvider) {
     $httpProvider.defaults.useXDomain = true;
     delete $httpProvider.defaults.headers.common['X-Requested-With'];
-});
+}]);
 
-app.controller('MainCtrl', function($scope, $navigate) {
+app.controller('MainCtrl',['$scope', '$navigate',function($scope, $navigate) {
     $scope.$navigate = $navigate;
-})
+}]);
 
 /*导航动画
 * 用法：添加"nav-to"属性 "ani"属性（动画）ani属性值前加符号为反向

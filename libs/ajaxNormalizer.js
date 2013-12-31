@@ -1,5 +1,5 @@
 (function(){
-    angular.module('regou.ajaxNormalizer', [], function($httpProvider)
+    angular.module('regou.ajaxNormalizer', [], ['$httpProvider',function($httpProvider)
     {
         $httpProvider.defaults.useXDomain = true;
         delete $httpProvider.defaults.headers.common['X-Requested-With'];
@@ -63,10 +63,10 @@
 
             return angular.isObject(data) && String(data) !== '[object File]' ? param(data) : data;
         }];
-    });
+    }]);
 
 
 
 
 
-})()
+})();

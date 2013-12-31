@@ -1,4 +1,4 @@
-app.config(function($routeProvider) {
+app.config(['$routeProvider',function($routeProvider) {
         $routeProvider
             .when("/one", {
                 templateUrl: "content/page1.html",
@@ -37,5 +37,5 @@ app.config(function($routeProvider) {
             .otherwise({
                 redirectTo: "/"
             });
-    })
+    }]);
 

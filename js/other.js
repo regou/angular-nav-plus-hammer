@@ -8,10 +8,10 @@
     }, false);
 })();
 
-app.run(function($route, $http, $templateCache) {
+app.run(['$route', '$http', '$templateCache',function($route, $http, $templateCache) {
     angular.forEach($route.routes, function(r) {
         if (r.templateUrl) {
             $http.get(r.templateUrl, {cache: $templateCache});
         }
     });
-});
+}]);

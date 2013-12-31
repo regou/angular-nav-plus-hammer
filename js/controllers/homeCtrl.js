@@ -1,9 +1,3 @@
-app.controller("homeCtrl",function($scope){
+app.controller("homeCtrl",['$scope',function($scope){
 
-    $scope.dtaped=function(){
-        $scope.act="You double Taped ME!";
-    }
-    $scope.swiped=function(){
-        $scope.act="You Swiped ME!";
-    }
-})
+}]);

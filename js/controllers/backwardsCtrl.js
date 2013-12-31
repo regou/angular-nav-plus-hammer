@@ -1,5 +1,5 @@
-app.controller("backwardsCtrl",function($scope,$rootScope){
+app.controller("backwardsCtrl",['$scope',function($scope){
 
 
 
-})
+}]);

@@ -1,4 +1,4 @@
-app.controller("headerCtrl",function($scope,$rootScope,$navigate){
+app.controller("headerCtrl",['$scope','$rootScope','$navigate',function($scope,$rootScope,$navigate){
 
     var headerCollapse=$("#my_headerCollapse");
     $rootScope.$on("$routeChangeStart",function(){
@@ -47,4 +47,4 @@ app.controller("headerCtrl",function($scope,$rootScope,$navigate){
     }
 
 
-})
+}]);
